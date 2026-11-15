@@ -1,8 +1,10 @@
 # Comment Control
 
 <p align="center">
-  <strong>Ultra-fast, zero-bloat comment governance, invisible zero-asset anti-spam shield, and privacy optimization for WordPress.</strong>
+  <img src="admin/images/banner-772x250.png" alt="Comment Control Banner" width="600">
 </p>
+
+An ultra-fast, zero-bloat comment governance, invisible anti-spam shield, and privacy optimization plugin for WordPress. Crafted and maintained with love by [ProtoXen](https://protoxen.com/).
 
 [![WordPress Plugin](https://img.shields.io/badge/WordPress-6.0%2B-blue.svg)](https://wordpress.org/plugins/comment-control/)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://php.net/)
