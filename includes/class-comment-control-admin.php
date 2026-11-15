@@ -172,6 +172,9 @@ class Comment_Control_Admin {
 		$logo_url = COMMENT_CONTROL_URL . 'admin/images/protoxen-logo.webp';
 		$icon_url = COMMENT_CONTROL_URL . 'admin/images/icon-128x128.png';
 
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		$is_updated = isset( $_GET['settings-updated'] ) && 'true' === $_GET['settings-updated'];
+
 		// Get all custom post types (excluding standard core types: post, page, attachment, etc.)
 		$custom_post_types = get_post_types(
 			array(
@@ -182,6 +185,22 @@ class Comment_Control_Admin {
 		);
 		?>
 		<div class="wrap cctl-wrap">
+			<?php if ( $is_updated ) : ?>
+				<!-- FLOATING AUTO-DISMISS TOAST NOTIFICATION -->
+				<div class="cctl-toast-alert" id="cctl_toast_alert" role="status" aria-live="polite">
+					<div class="cctl-toast-icon">
+						<span class="dashicons dashicons-yes-alt"></span>
+					</div>
+					<div class="cctl-toast-body">
+						<strong class="cctl-toast-title"><?php esc_html_e( 'Settings saved successfully', 'comment-control' ); ?></strong>
+						<span class="cctl-toast-sub"><?php esc_html_e( 'Your comment rules and protection policies have been updated.', 'comment-control' ); ?></span>
+					</div>
+					<button type="button" class="cctl-toast-close" id="cctl_toast_close" aria-label="<?php esc_attr_e( 'Close notification', 'comment-control' ); ?>">
+						<span class="dashicons dashicons-no-alt"></span>
+					</button>
+				</div>
+			<?php endif; ?>
+
 			<div class="cctl-header">
 				<div class="cctl-brand">
 					<div class="cctl-logo-badge">

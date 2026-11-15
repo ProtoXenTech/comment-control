@@ -10,6 +10,122 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+/* Suppress default clunky WordPress settings banner on Comment Control page */
+.settings_page_comment-control #setting-error-settings_updated,
+.settings_page_comment-control .notice.settings-error,
+.cctl-wrap ~ #setting-error-settings_updated,
+.wrap.cctl-wrap > .notice:not(.cctl-toast-alert) {
+    display: none !important;
+}
+
+/* ==========================================================================
+   FLOATING AUTO-HIDE TOAST POPUP
+   ========================================================================== */
+.cctl-toast-alert {
+    position: fixed;
+    top: 48px;
+    right: 32px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #0f172a;
+    color: #ffffff;
+    border: 1px solid rgba(2, 132, 199, 0.4);
+    box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.4), 0 0 25px rgba(2, 132, 199, 0.25);
+    padding: 14px 18px;
+    border-radius: 12px;
+    animation: cctlToastSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    max-width: 420px;
+}
+
+.cctl-toast-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cctl-toast-icon .dashicons {
+    color: #ffffff;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.cctl-toast-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cctl-toast-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.cctl-toast-sub {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+.cctl-toast-close {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin-left: 6px;
+}
+
+.cctl-toast-close:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cctl-toast-close .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+@keyframes cctlToastSlideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cctlToastFadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-16px);
+        opacity: 0;
+    }
+}
+
+.cctl-toast-alert.cctl-toast-hiding {
+    animation: cctlToastFadeOut 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 .cctl-header {
     display: flex;
     justify-content: space-between;

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-15T11:46:13+06:00\n"
+"POT-Creation-Date: 2026-11-15T11:48:35+06:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: comment-control\n"
@@ -48,199 +48,211 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:191
-msgid "Comment Control Studio"
-msgstr ""
-
-#: includes/class-comment-control-admin.php:192
-msgid "Zero-bloat comment governance, invisible anti-spam, and privacy optimization."
+#: includes/class-comment-control-admin.php:195
+msgid "Settings saved successfully"
 msgstr ""
 
 #: includes/class-comment-control-admin.php:196
-msgid "Crafted by"
+msgid "Your comment rules and protection policies have been updated."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:198
+msgid "Close notification"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:210
+msgid "Comment Control Studio"
 msgstr ""
 
 #: includes/class-comment-control-admin.php:211
-msgid "Lifecycle & Rules"
+msgid "Zero-bloat comment governance, invisible anti-spam, and privacy optimization."
 msgstr ""
 
 #: includes/class-comment-control-admin.php:215
+msgid "Crafted by"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:230
+msgid "Lifecycle & Rules"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:234
 msgid "Anti-Spam Shield"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:219
+#: includes/class-comment-control-admin.php:238
 msgid "Privacy & Speed"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:227
+#: includes/class-comment-control-admin.php:246
 msgid "Global & Post Type Rules"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:235
+#: includes/class-comment-control-admin.php:254
 msgid "Global Killswitch (Disable Everywhere)"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:236
+#: includes/class-comment-control-admin.php:255
 msgid "Completely turns off comment templates and comment forms site-wide."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:246
+#: includes/class-comment-control-admin.php:265
 msgid "Disable Comments on Pages"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:247
+#: includes/class-comment-control-admin.php:266
 msgid "Standard static pages rarely need discussion sections. Keeps pages clean."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:257
+#: includes/class-comment-control-admin.php:276
 msgid "Disable Comments on Media / Attachments"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:258
+#: includes/class-comment-control-admin.php:277
 msgid "Prevents spammers from targeting forgotten image attachment pages."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:265
+#: includes/class-comment-control-admin.php:284
 msgid "Custom Post Types Governance"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:266
+#: includes/class-comment-control-admin.php:285
 msgid "Selectively disable comments on specific custom post types registered on your site."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:281
+#: includes/class-comment-control-admin.php:300
 msgid "No public custom post types detected."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:282
+#: includes/class-comment-control-admin.php:301
 msgid "If you or another plugin registers custom post types in the future (such as Portfolio, Products, or Docs), they will automatically appear here with independent comment controls."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:290
+#: includes/class-comment-control-admin.php:309
 msgid "Comment Lifecycle & Character Budget"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:298
+#: includes/class-comment-control-admin.php:317
 msgid "Auto-Close Comments on Old Posts"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:299
+#: includes/class-comment-control-admin.php:318
 msgid "Automatically close discussion after posts reach a specific age."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:303
+#: includes/class-comment-control-admin.php:322
 msgid "Close after days:"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:315
+#: includes/class-comment-control-admin.php:334
 msgid "Enforce Minimum Comment Length"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:316
+#: includes/class-comment-control-admin.php:335
 msgid "Eliminates 1-word low effort responses (e.g. \"Thanks!\", \"Great post!\")."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:320
+#: includes/class-comment-control-admin.php:339
 msgid "Minimum characters required:"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:332
+#: includes/class-comment-control-admin.php:351
 msgid "Enforce Maximum Comment Length"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:333
+#: includes/class-comment-control-admin.php:352
 msgid "Prevents malicious paste dumps and oversized bot payloads."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:337
+#: includes/class-comment-control-admin.php:356
 msgid "Maximum characters allowed:"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:346
+#: includes/class-comment-control-admin.php:365
 msgid "Invisible Anti-Spam Protection (Zero-Asset, No CAPTCHA)"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:354
+#: includes/class-comment-control-admin.php:373
 msgid "Invisible Honeypot Trap"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:355
+#: includes/class-comment-control-admin.php:374
 msgid "Injects an invisible CSS-masked field. Bots fill it out automatically; real humans cannot see it. Instantly terminates bot attacks with 0ms server overhead."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:365
+#: includes/class-comment-control-admin.php:384
 msgid "Cryptographic Speed Trap"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:366
+#: includes/class-comment-control-admin.php:385
 msgid "Blocks instant automated form submissions. Real humans require time to read and type."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:370
+#: includes/class-comment-control-admin.php:389
 msgid "Minimum typing time before submit (seconds):"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:382
+#: includes/class-comment-control-admin.php:401
 msgid "Remove \"Website / Author URL\" Field"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:383
+#: includes/class-comment-control-admin.php:402
 msgid "Completely removes the URL input field. Eliminates ~85% of comment spammers attempting to build SEO backlinks."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:395
+#: includes/class-comment-control-admin.php:414
 msgid "Hyperlink Count Gatekeeper"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:396
+#: includes/class-comment-control-admin.php:415
 msgid "Monitors the number of URLs embedded within the comment text body."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:400
+#: includes/class-comment-control-admin.php:419
 msgid "Max permitted links in comment:"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:404
+#: includes/class-comment-control-admin.php:423
 msgid "Action when limit exceeded:"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:406
+#: includes/class-comment-control-admin.php:425
 msgid "Hold for manual moderation queue"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:407
+#: includes/class-comment-control-admin.php:426
 msgid "Instantly reject comment submission"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:416
+#: includes/class-comment-control-admin.php:435
 msgid "Privacy (GDPR / CCPA) & Speed Enhancements"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:424
+#: includes/class-comment-control-admin.php:443
 msgid "Anonymize Commenter IP Address (100% GDPR Compliance)"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:425
+#: includes/class-comment-control-admin.php:444
 msgid "Replaces visitor IP addresses with 127.0.0.1 in the database so no personally identifiable information (PII) is stored."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:435
+#: includes/class-comment-control-admin.php:454
 msgid "Clean ?replytocom Query Loop (Google Crawl Budget Saver)"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:436
+#: includes/class-comment-control-admin.php:455
 msgid "Replaces reply query strings with clean in-page anchors and 301 redirects crawlers to the canonical post URL to save crawl budget."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:446
+#: includes/class-comment-control-admin.php:465
 msgid "Disable External Gravatars"
 msgstr ""
 
-#: includes/class-comment-control-admin.php:447
+#: includes/class-comment-control-admin.php:466
 msgid "Prevents 20–100+ external DNS lookups to Gravatar.com on discussion-heavy posts. Massive boost to PageSpeed and Core Web Vitals."
 msgstr ""
 
-#: includes/class-comment-control-admin.php:455
+#: includes/class-comment-control-admin.php:474
 msgid "Save All Changes"
 msgstr ""
 
