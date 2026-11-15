@@ -31,12 +31,20 @@
 .cctl-logo-badge {
     width: 44px;
     height: 44px;
-    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-    color: #ffffff;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.2);
+}
+
+.cctl-header-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    display: block;
 }
 
 .cctl-header h1 {
@@ -66,14 +74,32 @@
 }
 
 .cctl-author-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 12px;
     color: #94a3b8;
 }
 
-.cctl-author-tag a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
+.cctl-by-text {
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.cctl-brand-link {
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+}
+
+.cctl-brand-link:hover {
+    opacity: 0.8;
+}
+
+.cctl-protoxen-logo {
+    height: 20px;
+    width: auto;
+    display: block;
 }
 
 /* Tabs Navigation */

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient: Deep Tech Cyan to Ocean Indigo -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Shield Glow Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#021427" flood-opacity="0.45" />
+    </filter>
+
+    <!-- Chat Bubble Glow -->
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Tile -->
+  <rect width="512" height="512" rx="104" fill="url(#bgGrad)" />
+
+  <!-- Shield Base (Security & Protection) -->
+  <g filter="url(#shadow)">
+    <path d="M256 76 L396 128 V248 C396 348 256 428 256 428 C256 428 116 348 116 248 V128 Z" 
+          fill="url(#shieldGrad)" 
+          stroke="rgba(255, 255, 255, 0.25)" 
+          stroke-width="6" />
+
+    <!-- Inner Clean Chat Bubble Container -->
+    <path d="M256 160 C194.14 160 144 202.98 144 256 C144 286.82 159.98 314.07 185.09 331.42 L176 376 L222.18 350.51 C233.02 353.44 244.35 355 256 355 C317.86 355 368 312.02 368 256 C368 202.98 317.86 160 256 160 Z" 
+          fill="url(#bubbleGrad)" />
+
+    <!-- Modern Toggle Switch Nodes inside Bubble (Governance & Control) -->
+    <!-- Slider Track -->
+    <rect x="200" y="242" width="112" height="28" rx="14" fill="#e2e8f0" />
+    <!-- Active Slider Knob -->
+    <circle cx="288" cy="256" r="18" fill="#0284c7" />
+    <path d="M283 256 L287 260 L294 252" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Speed Lightning / Fast Accents -->
+    <path d="M220 220 L228 204 L223 204 L226 192 L216 208 L221 208 Z" fill="#0284c7" opacity="0.8" />
+  </g>
+</svg>

@@ -169,6 +169,8 @@ class Comment_Control_Admin {
 		}
 
 		$settings = self::$core->get_setting();
+		$logo_url = COMMENT_CONTROL_URL . 'admin/images/protoxen-logo.webp';
+		$icon_url = COMMENT_CONTROL_URL . 'admin/images/icon-128x128.png';
 
 		// Get all public post types excluding core non-relevant ones
 		$all_post_types = get_post_types( array( 'public' => true ), 'objects' );
@@ -178,12 +180,7 @@ class Comment_Control_Admin {
 			<div class="cctl-header">
 				<div class="cctl-brand">
 					<div class="cctl-logo-badge">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-							<circle cx="12" cy="10" r="1"></circle>
-							<circle cx="8" cy="10" r="1"></circle>
-							<circle cx="16" cy="10" r="1"></circle>
-						</svg>
+						<img src="<?php echo esc_url( $icon_url ); ?>" alt="Comment Control Icon" width="44" height="44" class="cctl-header-icon" />
 					</div>
 					<div>
 						<h1><?php esc_html_e( 'Comment Control Studio', 'comment-control' ); ?> <span class="cctl-badge">v<?php echo esc_html( COMMENT_CONTROL_VERSION ); ?></span></h1>
@@ -191,7 +188,10 @@ class Comment_Control_Admin {
 					</div>
 				</div>
 				<div class="cctl-author-tag">
-					<?php esc_html_e( 'By', 'comment-control' ); ?> <a href="https://protoxen.com/" target="_blank" rel="noopener noreferrer">ProtoXen</a>
+					<span class="cctl-by-text"><?php esc_html_e( 'Crafted by', 'comment-control' ); ?></span>
+					<a href="https://protoxen.com/" target="_blank" rel="noopener noreferrer" class="cctl-brand-link">
+						<img src="<?php echo esc_url( $logo_url ); ?>" alt="ProtoXen" width="88" height="20" class="cctl-protoxen-logo" />
+					</a>
 				</div>
 			</div>
 
