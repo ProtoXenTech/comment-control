@@ -1,0 +1,285 @@
+# Copyright (C) 2026 ProtoXen
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Comment Control 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/comment-control\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-15T11:35:26+06:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: comment-control\n"
+
+#. Plugin Name of the plugin
+#: comment-control.php
+#: includes/class-comment-control-admin.php:49
+msgid "Comment Control"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: comment-control.php
+msgid "https://protoxen.com/comment-control/"
+msgstr ""
+
+#. Description of the plugin
+#: comment-control.php
+msgid "Ultra-fast, zero-bloat comment governance, invisible anti-spam shield, privacy protection, and SEO optimization."
+msgstr ""
+
+#. Author of the plugin
+#: comment-control.php
+msgid "ProtoXen"
+msgstr ""
+
+#. Author URI of the plugin
+#: comment-control.php
+msgid "https://protoxen.com/"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:48
+msgid "Comment Control Settings"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:132
+msgid "Settings"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:189
+msgid "Comment Control Studio"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:190
+msgid "Zero-bloat comment governance, invisible anti-spam, and privacy optimization."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:194
+msgid "By"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:206
+msgid "Lifecycle & Rules"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:210
+msgid "Anti-Spam Shield"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:214
+msgid "Privacy & Speed"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:222
+msgid "Global & Post Type Rules"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:230
+msgid "Global Killswitch (Disable Everywhere)"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:231
+msgid "Completely turns off comment templates and comment forms site-wide."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:241
+msgid "Disable Comments on Pages"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:242
+msgid "Standard static pages rarely need discussion sections. Keeps pages clean."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:252
+msgid "Disable Comments on Media / Attachments"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:253
+msgid "Prevents spammers from targeting forgotten image attachment pages."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:259
+msgid "Disable on Specific Custom Post Types:"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:274
+msgid "Comment Lifecycle & Character Budget"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:282
+msgid "Auto-Close Comments on Old Posts"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:283
+msgid "Automatically close discussion after posts reach a specific age."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:287
+msgid "Close after days:"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:299
+msgid "Enforce Minimum Comment Length"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:300
+msgid "Eliminates 1-word low effort responses (e.g. \"Thanks!\", \"Great post!\")."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:304
+msgid "Minimum characters required:"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:316
+msgid "Enforce Maximum Comment Length"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:317
+msgid "Prevents malicious paste dumps and oversized bot payloads."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:321
+msgid "Maximum characters allowed:"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:330
+msgid "Invisible Anti-Spam Protection (Zero-Asset, No CAPTCHA)"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:338
+msgid "Invisible Honeypot Trap"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:339
+msgid "Injects an invisible CSS-masked field. Bots fill it out automatically; real humans cannot see it. Instantly terminates bot attacks with 0ms server overhead."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:349
+msgid "Cryptographic Speed Trap"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:350
+msgid "Blocks instant automated form submissions. Real humans require time to read and type."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:354
+msgid "Minimum typing time before submit (seconds):"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:366
+msgid "Remove \"Website / Author URL\" Field"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:367
+msgid "Completely removes the URL input field. Eliminates ~85% of comment spammers attempting to build SEO backlinks."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:379
+msgid "Hyperlink Count Gatekeeper"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:380
+msgid "Monitors the number of URLs embedded within the comment text body."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:384
+msgid "Max permitted links in comment:"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:388
+msgid "Action when limit exceeded:"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:390
+msgid "Hold for manual moderation queue"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:391
+msgid "Instantly reject comment submission"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:400
+msgid "Privacy (GDPR / CCPA) & Speed Enhancements"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:408
+msgid "Anonymize Commenter IP Address (100% GDPR Compliance)"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:409
+msgid "Replaces visitor IP addresses with 127.0.0.1 in the database so no personally identifiable information (PII) is stored."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:419
+msgid "Clean ?replytocom Query Loop (Google Crawl Budget Saver)"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:420
+msgid "Replaces reply query strings with clean in-page anchors and 301 redirects crawlers to the canonical post URL to save crawl budget."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:430
+msgid "Disable External Gravatars"
+msgstr ""
+
+#: includes/class-comment-control-admin.php:431
+msgid "Prevents 20–100+ external DNS lookups to Gravatar.com on discussion-heavy posts. Massive boost to PageSpeed and Core Web Vitals."
+msgstr ""
+
+#: includes/class-comment-control-admin.php:439
+msgid "Save All Changes"
+msgstr ""
+
+#. translators: %d: Minimum required character count
+#: includes/class-comment-control-rules.php:149
+#, php-format
+msgid "Error: Your comment is too short. Please provide a more detailed comment with at least %d characters."
+msgstr ""
+
+#: includes/class-comment-control-rules.php:152
+msgid "Comment Too Short"
+msgstr ""
+
+#. translators: %d: Maximum allowed character count
+#: includes/class-comment-control-rules.php:168
+#, php-format
+msgid "Error: Your comment is too long. Please shorten your comment to under %d characters."
+msgstr ""
+
+#: includes/class-comment-control-rules.php:171
+msgid "Comment Too Long"
+msgstr ""
+
+#: includes/class-comment-control-shield.php:76
+msgid "Do not fill this field if you are a human:"
+msgstr ""
+
+#: includes/class-comment-control-shield.php:122
+msgid "Spam detected. Comment rejected."
+msgstr ""
+
+#: includes/class-comment-control-shield.php:123
+msgid "Spam Blocked"
+msgstr ""
+
+#. translators: %d: Minimum required seconds to submit
+#: includes/class-comment-control-shield.php:147
+#, php-format
+msgid "Error: You submitted the comment too quickly (under %d seconds). Please slow down and try again."
+msgstr ""
+
+#: includes/class-comment-control-shield.php:150
+msgid "Submission Too Fast"
+msgstr ""
+
+#. translators: %d: Maximum allowed links
+#: includes/class-comment-control-shield.php:174
+#, php-format
+msgid "Error: Comments containing more than %d link(s) are not accepted."
+msgstr ""
+
+#: includes/class-comment-control-shield.php:177
+msgid "Link Limit Exceeded"
+msgstr ""
