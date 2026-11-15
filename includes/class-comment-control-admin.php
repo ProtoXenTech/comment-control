@@ -172,9 +172,14 @@ class Comment_Control_Admin {
 		$logo_url = COMMENT_CONTROL_URL . 'admin/images/protoxen-logo.webp';
 		$icon_url = COMMENT_CONTROL_URL . 'admin/images/icon-128x128.png';
 
-		// Get all public post types excluding core non-relevant ones
-		$all_post_types = get_post_types( array( 'public' => true ), 'objects' );
-		unset( $all_post_types['attachment'], $all_post_types['page'] );
+		// Get all custom post types (excluding standard core types: post, page, attachment, etc.)
+		$custom_post_types = get_post_types(
+			array(
+				'public'   => true,
+				'_builtin' => false,
+			),
+			'objects'
+		);
 		?>
 		<div class="wrap cctl-wrap">
 			<div class="cctl-header">
@@ -254,20 +259,31 @@ class Comment_Control_Admin {
 								</div>
 							</div>
 
-							<?php if ( ! empty( $all_post_types ) ) : ?>
-								<div class="cctl-input-group">
-									<label class="cctl-label"><strong><?php esc_html_e( 'Disable on Specific Custom Post Types:', 'comment-control' ); ?></strong></label>
+							<hr class="cctl-divider" />
+
+							<div class="cctl-input-group">
+								<label class="cctl-label"><strong><?php esc_html_e( 'Custom Post Types Governance', 'comment-control' ); ?></strong></label>
+								<p class="cctl-field-description"><?php esc_html_e( 'Selectively disable comments on specific custom post types registered on your site.', 'comment-control' ); ?></p>
+								
+								<?php if ( ! empty( $custom_post_types ) ) : ?>
 									<div class="cctl-checkbox-grid">
-										<?php foreach ( $all_post_types as $pt ) : ?>
-											<?php if ( 'post' === $pt->name ) continue; ?>
+										<?php foreach ( $custom_post_types as $pt ) : ?>
 											<label class="cctl-checkbox-item">
 												<input type="checkbox" name="<?php echo esc_attr( self::OPTION_NAME ); ?>[disabled_post_types][]" value="<?php echo esc_attr( $pt->name ); ?>" <?php checked( in_array( $pt->name, (array) $settings['disabled_post_types'], true ) ); ?> />
-												<span><?php echo esc_html( $pt->labels->singular_name ); ?> (<code><?php echo esc_html( $pt->name ); ?></code>)</span>
+												<span><strong><?php echo esc_html( $pt->labels->singular_name ); ?></strong> (<code><?php echo esc_html( $pt->name ); ?></code>)</span>
 											</label>
 										<?php endforeach; ?>
 									</div>
-								</div>
-							<?php endif; ?>
+								<?php else : ?>
+									<div class="cctl-empty-notice">
+										<span class="dashicons dashicons-info-outline"></span>
+										<div>
+											<strong><?php esc_html_e( 'No public custom post types detected.', 'comment-control' ); ?></strong>
+											<p><?php esc_html_e( 'If you or another plugin registers custom post types in the future (such as Portfolio, Products, or Docs), they will automatically appear here with independent comment controls.', 'comment-control' ); ?></p>
+										</div>
+									</div>
+								<?php endif; ?>
+							</div>
 						</div>
 
 						<div class="cctl-card">

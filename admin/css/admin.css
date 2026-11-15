@@ -279,6 +279,42 @@
     cursor: pointer;
 }
 
+.cctl-field-description {
+    margin: 4px 0 12px 0;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.cctl-empty-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.cctl-empty-notice .dashicons {
+    color: #0284c7;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+.cctl-empty-notice strong {
+    color: #334155;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.cctl-empty-notice p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
 .cctl-footer-save {
     margin-top: 24px;
 }
