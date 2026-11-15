@@ -209,6 +209,23 @@ class Comment_Control_Admin {
 					<div>
 						<h1><?php esc_html_e( 'Comment Control Studio', 'comment-control' ); ?> <span class="cctl-badge">v<?php echo esc_html( COMMENT_CONTROL_VERSION ); ?></span></h1>
 						<p class="cctl-subtitle"><?php esc_html_e( 'Zero-bloat comment governance, invisible anti-spam, and privacy optimization.', 'comment-control' ); ?></p>
+						<?php
+						$blocked_count = Comment_Control_Shield::get_blocked_count();
+						if ( $blocked_count > 0 ) :
+							?>
+							<div class="cctl-stat-pill">
+								<span class="dashicons dashicons-shield"></span>
+								<span>
+									<?php
+									printf(
+										/* translators: %s: formatted number of blocked spam bots */
+										esc_html__( '%s Spam Bots Blocked', 'comment-control' ),
+										'<strong>' . esc_html( number_format_i18n( $blocked_count ) ) . '</strong>'
+									);
+									?>
+								</span>
+							</div>
+						<?php endif; ?>
 					</div>
 				</div>
 				<div class="cctl-author-tag">
@@ -472,6 +489,20 @@ class Comment_Control_Admin {
 
 				<div class="cctl-footer-save">
 					<?php submit_button( esc_html__( 'Save All Changes', 'comment-control' ), 'primary large', 'submit', false ); ?>
+				</div>
+
+				<div class="cctl-suite-footer">
+					<div class="cctl-suite-text">
+						<strong><?php esc_html_e( 'ProtoXen Performance Suite', 'comment-control' ); ?></strong>
+						<span><?php esc_html_e( 'Elevate your WordPress experience with zero bloat.', 'comment-control' ); ?></span>
+					</div>
+					<div class="cctl-suite-links">
+						<a href="<?php echo esc_url( admin_url( 'themes.php?page=login-themer' ) ); ?>"><?php esc_html_e( 'Login Themer', 'comment-control' ); ?></a>
+						<span class="cctl-dot">•</span>
+						<a href="<?php echo esc_url( admin_url( 'tools.php?page=media-trim' ) ); ?>"><?php esc_html_e( 'Media Trim', 'comment-control' ); ?></a>
+						<span class="cctl-dot">•</span>
+						<a href="https://protoxen.com/" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'ProtoXen.com', 'comment-control' ); ?></a>
+					</div>
 				</div>
 			</form>
 		</div>

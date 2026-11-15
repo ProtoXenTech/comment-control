@@ -117,6 +117,7 @@ class Comment_Control_Shield {
 			// phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$honeypot_val = isset( $_POST[ self::HONEYPOT_FIELD ] ) ? sanitize_text_field( wp_unslash( $_POST[ self::HONEYPOT_FIELD ] ) ) : '';
 			if ( ! empty( $honeypot_val ) ) {
+				self::increment_blocked_counter();
 				// Honeypot field filled: Silent drop / 403 Fast bail to save server resources
 				wp_die(
 					esc_html__( 'Spam detected. Comment rejected.', 'comment-control' ),
@@ -141,6 +142,7 @@ class Comment_Control_Shield {
 				if ( hash_equals( $expected_hash, $hash ) ) {
 					$elapsed = time() - $timestamp;
 					if ( $elapsed < $min_seconds ) {
+						self::increment_blocked_counter();
 						wp_die(
 							sprintf(
 								/* translators: %d: Minimum required seconds to submit */
@@ -194,6 +196,23 @@ class Comment_Control_Shield {
 		}
 
 		return $commentdata;
+	}
+
+	/**
+	 * Increment blocked spam stats counter in wp_options.
+	 */
+	public static function increment_blocked_counter() {
+		$current = (int) get_option( 'comment_control_blocked_spam_count', 0 );
+		update_option( 'comment_control_blocked_spam_count', $current + 1, false );
+	}
+
+	/**
+	 * Get total blocked spam count.
+	 *
+	 * @return int
+	 */
+	public static function get_blocked_count() {
+		return (int) get_option( 'comment_control_blocked_spam_count', 0 );
 	}
 
 	/**
